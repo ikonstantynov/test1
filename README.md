@@ -1,53 +1,6 @@
 
 [![Build Status](https://travis-ci.com/SPSCommerce/xd-transformation-service.svg?token=MzkqWQyz5MMM3E8CzXMi&branch=master)](https://travis-ci.com/SPSCommerce/xd-transformation-service)
 
-# xd-transformation-service
-Execute fi4 on demand.
-
-## API
-
-### /run
-
-description: start a transformation
-
-method: POST
-
-request body:
-```
-{
-    map: {
-        ... (See map object below)
-    },
-    input: {
-        ... (See input object below)
-    },
-    callback: www.callback.com, OPTIONAL
-    timeout: 200 (seconds), OPTIONAL
-}
-```
-response: 200
-```
-{
-    input_filename: file_name,
-    timeout_status: true | false,
-    sender: sender, 
-    callback: Default Empty,
-    parcel_uid: Default Empty,
-    receiver: receiver,
-    range_key: Unique ID,
-    parcel_sender: Default Empty,
-    transformation_status: ERROR | SUCCESS,
-    end_time: end time,
-    timeout: Default 180 seconds,
-    branch: branch name,
-    map_name: Map Name,
-    transformation_state: PROCESSING | COMPLETE,
-    parcel_receiver: Default Empty,
-    user_name: user email address,
-    start_time: start time
-}
-```
-
 ### /transformation/<map_name>/<range_key>
 
 description: get a transformation
