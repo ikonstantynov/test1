@@ -5,7 +5,7 @@
 xd-transformation-service supports sending map and input data in multiple ways.
 
 #### Map
-
+[Preferences](#preferences)
 A map can either local xtl data or the remote repo location in xd-server
 
 ##### local xtl data
