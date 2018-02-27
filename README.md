@@ -113,88 +113,7 @@ response: 200
 {
     [
         {
-            input_filename: file_name,
-            timeout_status: true | false,
-            sender: sender, 
-            callback: Default Empty,
-            parcel_uid: Default Empty,
-            receiver: receiver,
-            range_key: Unique ID,
-            parcel_sender: Default Empty,
-            transformation_status: ERROR | SUCCESS,
-            end_time: end time,
-            timeout: Default 180 seconds,
-            branch: branch name,
-            map_name: Map Name,
-            transformation_state: PROCESSING | COMPLETE,
-            parcel_receiver: Default Empty,
-            user_name: user email addr,
-            output_files: {
-                filename: presigned_url to s3 location
-                ...
-                more files
-            }
-        },
-        {
-            input_filename: file_name,
-            timeout_status: true | false,
-            sender: sender, 
-            callback: Default Empty,
-            parcel_uid: Default Empty,
-            receiver: receiver,
-            range_key: Unique ID,
-            parcel_sender: Default Empty,
-            transformation_status: ERROR | SUCCESS,
-            end_time: end time,
-            timeout: Default 180 seconds,
-            branch: branch name,
-            map_name: Map Name,
-            transformation_state: PROCESSING | COMPLETE,
-            parcel_receiver: Default Empty,
-            user_name: user email addr,
-            output_files: {
-                filename: presigned_url to s3 location
-                ...
-                more files
-            }
-        },
-        ...
-    ]
-}
-```
 
-### /transformation/<map_name>/<range_key>
-
-description: delete a transformation
-
-method: DELETE
-
-response: 200 Deleted Record
-```
-{
-    input_filename: file_name,
-    timeout_status: true | false,
-    sender: sender, 
-    callback: Default Empty,
-    parcel_uid: Default Empty,
-    receiver: receiver,
-    range_key: Unique ID,
-    parcel_sender: Default Empty,
-    transformation_status: ERROR | SUCCESS,
-    end_time: end time,
-    timeout: Default 180 seconds,
-    branch: branch name,
-    map_name: Map Name,
-    transformation_state: PROCESSING | COMPLETE,
-    parcel_receiver: Default Empty,
-    user_name: user email addr,
-    output_files: {
-        filename: presigned_url to s3 location
-        ...
-        more files
-    }
-}
-```
 
 ### /transformation/<map_name>/<range_key>
 
@@ -212,48 +131,7 @@ example
 }
 ```
 
-response: 200 Updated Record
-```
-{
-    input_filename: file_name,
-    timeout_status: true | false,
-    sender: sender, 
-    callback: Default Empty,
-    parcel_uid: Default Empty,
-    receiver: receiver,
-    range_key: Unique ID,
-    parcel_sender: Default Empty,
-    transformation_status: ERROR | SUCCESS,
-    end_time: end time,
-    timeout: Default 180 seconds,
-    branch: branch name,
-    map_name: Map Name,
-    transformation_state: PROCESSING | COMPLETE,
-    parcel_receiver: Default Empty,
-    user_name: user email addr,
-    output_files: {
-        filename: presigned_url to s3 location
-        ...
-        more files
-    }
-}
-```
-
-### /transformation/<map_name>/<range_key>/<file_name>
-
-description: get data for file in transformation
-
-method: GET
-
-response: file
-
-### /diff
-
-description: start a diff
-
-method: POST
-
-request body:
+:
 ```
 {
     maps: {[
