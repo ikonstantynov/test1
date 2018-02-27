@@ -373,7 +373,7 @@ A map can either local xtl data or the remote repo location in xd-server
     sender: testsender,
     receiver: testreceiver,
     preferences: {
-        ... (See [preferences](#### Preferences) object below)
+        ... (See [[preferences | #### Preferences]] object below)
     }
 }
 ```
